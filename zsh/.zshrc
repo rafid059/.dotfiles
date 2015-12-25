@@ -94,9 +94,3 @@ for config ($DOTFILES/zsh/.zsh/*.zsh) source $config
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
-
-
-# load .Xresources
-xrdb $DOTFILES/urxvt/.Xresources
