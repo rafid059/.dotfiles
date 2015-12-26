@@ -1,4 +1,6 @@
 #!/bin/bash
 #sudo dnf update
-sudo dnf install zsh
-#echo "export ZDOTDIR=~/.dotfiles/zsh" >> 
+sudo dnf -y install zsh
+echo "export ZDOTDIR=~/.dotfiles/zsh" >> /etc/zshenv
+sudo dnf -y install rxvt-unicode-256color
+sudo dnf -y install i3
