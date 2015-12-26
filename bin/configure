@@ -1,0 +1,4 @@
+#!/bin/bash
+#sudo dnf update
+sudo dnf install zsh
+#echo "export ZDOTDIR=~/.dotfiles/zsh" >> 
