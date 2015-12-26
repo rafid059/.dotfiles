@@ -4,3 +4,8 @@ sudo dnf -y install zsh
 echo "export ZDOTDIR=~/.dotfiles/zsh" >> /etc/zshenv
 sudo dnf -y install rxvt-unicode-256color
 sudo dnf -y install i3
+sudo dnf -y install i3lock
+sudo dnf -y install i3status
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+sudo dnf -y install ./google*
+chsh -s $(which zsh)
