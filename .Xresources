@@ -22,7 +22,9 @@ Xcursor.size: 12
 
 ! fonts
 URxvt.xftAntialias: true
-URxvt.font: xft:DejaVu Sans Mono:pixelsize=14:style=Book
+!URxvt.font: xft:DejaVu Sans Mono:pixelsize=14:style=Book
+!URxvt.font: xft:terminus:size=13
+URxvt.font: xft:monoOne:style=regular:size=14
 
 URxvt.cursorBlink: true
 
