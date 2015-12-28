@@ -1,9 +1,11 @@
 i3blocks
 	make fn keys work with brightness and volume
-	change date format
 
 emacs
 	configure emacs for c/c++, java, web technologies
 
 sublime text
 	download sublime for a goto editor
+
+
+* use symlinks to link all files in the cloned repo. no need to copy individual directories to $HOME
