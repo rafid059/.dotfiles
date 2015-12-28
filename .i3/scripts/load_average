@@ -24,11 +24,22 @@ echo "$load"
 echo "$load"
 
 # color if load is too high
-awk -v cpus=$cpus -v cpuload=$load '
-    BEGIN {
-        if (cpus <= cpuload) {
-            print "#FF0000";
-            exit 33;
-        }
-    }
-'
+#awk -v cpus=$cpus -v cpuload=$load '
+#    BEGIN {
+#        if (cpus <= cpuload) {
+#            print "#FF0000";
+#            exit 33;
+#        }
+#    }
+#'
+
+# color
+if [[ $load -le 0.20 ]]; then
+    echo "#00FF00"
+elif [[ $load -lt 0.40 ]]; then
+    echo "#FFF600"
+elif [[ $load -lt 0.60 ]]; then
+    echo "#FFAE00"
+elif [[ $load -lt 0.80 ]]; then
+    echo "#FF0000"
+fi
