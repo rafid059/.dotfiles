@@ -1,7 +1,6 @@
 i3blocks
 	make fn keys work with brightness and volume
 	change date format
-	select suitable color for i3bar and blocks
 
 emacs
 	configure emacs for c/c++, java, web technologies
