@@ -11,6 +11,8 @@
 #
 # The color will gradually change for a percentage below 85%, and the urgency
 # (exit code 33) is set if there is less that 5% remaining.
+#
+# Modified my Rafiduzzaman Sonnet <rafid059@gmail.com>
 
 use strict;
 use warnings;
@@ -70,7 +72,7 @@ if ($acpi =~ /(\d\d:\d\d):/) {
 print "$full_text\n";
 print "$short_text\n";
 
-# consider color and urgent flag only on discharge
+# consider color and urgent flag
 if ($status eq 'Discharging') {
 
 	if ($percent < 20) {
@@ -81,11 +83,15 @@ if ($status eq 'Discharging') {
 		print "#FFF600\n";
 	} elsif ($percent < 85) {
 		print "#A8FF00\n";
+	} elsif ($percent >= 85) {
+		print "#00FF00\n";
 	}
 
 	if ($percent < 5) {
 		exit(33);
 	}
+} else {
+	print "#00FF00\n";
 }
 
 exit(0);
