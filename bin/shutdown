@@ -1,0 +1,2 @@
+#!/bin/bash
+echo   | sudo shutdown 23:00
