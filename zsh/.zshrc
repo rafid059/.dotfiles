@@ -64,7 +64,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/sonnet/bin:/home/sonnet/bin"
+export PATH="/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/sonnet/bin:/home/sonnet/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
