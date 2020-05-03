@@ -1,0 +1,13 @@
+alias gaa='git add --all'
+alias gcm='git commit -m'
+alias gst='git status'
+alias gss='git status -s'
+alias gsh='git stash'
+alias gck='git checkout --recurse-submodule'
+alias gsu='git submodule update --init --recursive'
+alias gb='git branch'
+alias gdf='git diff'
+alias glg='git log'
+alias gbname="gb | grep \"*\" | awk -F ' ' '{print \$2}'"
+alias ggpull='git pull origin `gbname`'
+alias ggpush='git push -u origin `gbname`'
