@@ -1,7 +1,0 @@
-#!/bin/bash
-
-DATETIME=$(date '+%Y-%m-%d %H:%M:%S')
-
-echo "${DATETIME}"
-echo "${DATETIME}"
-echo \#08E6FF
