@@ -11,3 +11,4 @@ alias glg='git log'
 alias gbname="gb | grep \"*\" | awk -F ' ' '{print \$2}'"
 alias ggpull='git pull origin `gbname`'
 alias ggpush='git push -u origin `gbname`'
+alias gpla='git pull --all'
